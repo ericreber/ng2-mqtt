@@ -5,8 +5,8 @@ export declare namespace Paho {
       constructor(host: string, port: number, clientId: string);
       constructor(host: string, port: number, path: string, clientId: string);
       connect(connectOptions: Object): void;
-      subscribe(filter: string, subscribeOptions: Object): void;
-      unsubscribe(filter: string, unsubscribeOptions: Object): void;
+      subscribe(filter: string, subscribeOptions?: Object): void;
+      unsubscribe(filter: string, unsubscribeOptions?: Object): void;
       send(message: Message): void;
       disconnect(): void;
       getTraceLog(): void;
